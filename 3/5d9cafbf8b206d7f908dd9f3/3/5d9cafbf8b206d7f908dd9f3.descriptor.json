@@ -1,0 +1,8 @@
+{
+  "resource" : "eddi://ai.labs.package/packagestore/packages/5d9cafbf8b206d7f908dd9f3?version=3",
+  "createdOn" : 1570549695841,
+  "lastModifiedOn" : 1570550182094,
+  "deleted" : false,
+  "name" : "tvPackage",
+  "description" : "Hi"
+}

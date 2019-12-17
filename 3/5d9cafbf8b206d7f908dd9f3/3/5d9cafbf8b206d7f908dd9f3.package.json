@@ -1,0 +1,54 @@
+{
+  "packageExtensions" : [ {
+    "type" : "eddi://ai.labs.parser",
+    "extensions" : {
+      "dictionaries" : [ {
+        "type" : "eddi://ai.labs.parser.dictionaries.regular",
+        "config" : {
+          "uri" : "eddi://ai.labs.regulardictionary/regulardictionarystore/regulardictionaries/5d9cafbf8b206d7f908dd9ec?version=1"
+        }
+      } ]
+    },
+    "config" : { }
+  }, {
+    "type" : "eddi://ai.labs.behavior",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.behavior/behaviorstore/behaviorsets/5d9cafbf8b206d7f908dd9ed?version=3"
+    }
+  }, {
+    "type" : "eddi://ai.labs.httpcalls",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.httpcalls/httpcallsstore/httpcalls/5d9cafbf8b206d7f908dd9ee?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.httpcalls",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.httpcalls/httpcallsstore/httpcalls/5d9cafbf8b206d7f908dd9ef?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.httpcalls",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.httpcalls/httpcallsstore/httpcalls/5d9cafbf8b206d7f908dd9f0?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.httpcalls",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.httpcalls/httpcallsstore/httpcalls/5d9cafbf8b206d7f908dd9f1?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.output",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.output/outputstore/outputsets/5d9cafbf8b206d7f908dd9f2?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.templating",
+    "extensions" : { },
+    "config" : { }
+  } ]
+}
