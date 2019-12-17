@@ -1,0 +1,158 @@
+{
+  "targetServerUrl" : "https://api.meetup.com/2/open_events",
+  "httpCalls" : [ {
+    "name" : "techEvents",
+    "actions" : [ "tech_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "techEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "34",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "danceEvents",
+    "actions" : [ "dance_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "danceEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "5",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "artEvents",
+    "actions" : [ "art_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "artEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "1",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "beliefEvents",
+    "actions" : [ "belief_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "beliefEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "22",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "musicEvents",
+    "actions" : [ "music_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "musicEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "21",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "lgbtqEvents",
+    "actions" : [ "lgbtq_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "lgbtqEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "12",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  }, {
+    "name" : "languageAndCultureEvents",
+    "actions" : [ "languageAndCulture_events_information" ],
+    "saveResponse" : true,
+    "responseObjectName" : "languageAndCultureEvents",
+    "fireAndForget" : false,
+    "isBatchCalls" : false,
+    "request" : {
+      "path" : "",
+      "headers" : { },
+      "queryParams" : {
+        "sign" : "true",
+        "photo-host" : "public",
+        "category" : "16",
+        "page" : "20",
+        "key" : "57256b7f15474136d6028663d182b4e",
+        "zip" : "10001"
+      },
+      "method" : "get",
+      "contentType" : "application/json",
+      "body" : ""
+    }
+  } ]
+}

@@ -1,0 +1,188 @@
+{
+  "outputSet" : [ {
+    "action" : "art_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.artEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.artEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.artEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.artEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.artEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.artEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.artEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.artEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.artEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "belief_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.beliefEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.beliefEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.beliefEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.beliefEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.beliefEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.beliefEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.beliefEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.beliefEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.beliefEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "dance_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.danceEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.danceEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.danceEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.danceEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.danceEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.danceEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.danceEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.danceEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.danceEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "foodAndDrink_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.foodAndDrinkEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.foodAndDrinkEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.foodAndDrinkEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.foodAndDrinkEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.foodAndDrinkEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.foodAndDrinkEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.foodAndDrinkEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.foodAndDrinkEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.foodAndDrinkEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "healthAndWellness_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.healthAndWellnessEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.healthAndWellnessEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.healthAndWellnessEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.healthAndWellnessEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.healthAndWellnessEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.healthAndWellnessEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.healthAndWellnessEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.healthAndWellnessEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.healthAndWellnessEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "hobbiesAndCrafts_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.hobbiesAndCraftsEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.hobbiesAndCraftsEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.hobbiesAndCraftsEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.hobbiesAndCraftsEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "languageAndCulture_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.languageAndCultureEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.languageAndCultureEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.languageAndCultureEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.languageAndCultureEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.languageAndCultureEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.languageAndCultureEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.languageAndCultureEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.languageAndCultureEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.languageAndCultureEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "lgbtq_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.lgbtqEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.lgbtqEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.lgbtqEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.lgbtqEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.lgbtqEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.lgbtqEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.lgbtqEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.lgbtqEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.lgbtqEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "music_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.musicEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.movementEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.movementEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.movementEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.movementEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.movementEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.movementEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.movementEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.movementEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "music_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.musicEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.musicEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.musicEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.musicEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.musicEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.musicEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.musicEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.musicEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.musicEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "sciFiAndGames_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.sciFiAndGamesEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.sciFiAndGamesEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.sciFiAndGamesEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.sciFiAndGamesEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.sciFiAndGamesEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.sciFiAndGamesEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.sciFiAndGamesEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.sciFiAndGamesEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.sciFiAndGamesEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "tech_events_information",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.techEvents.results[0].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.techEvents.results[0].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.techEvents.results[0].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.techEvents.results[1].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.techEvents.results[1].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.techEvents.results[1].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<strong>[[${memory.current.httpCalls.techEvents.results[2].name}]]</strong><br />[[${#dates.format(new java.util.Date(memory.current.httpCalls.techEvents.results[2].time), 'MMM dd, yyyy')}]]<br /><a href=\"[[${memory.current.httpCalls.techEvents.results[2].event_url}]]\" target=\"_blank\">RSVP Here</a>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "What are we doing next?" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Find Tech Events",
+      "expressions" : "trigger(find_tech_events)"
+    }, {
+      "value" : "Find Dance Events",
+      "expressions" : "trigger(find_dance_events)"
+    }, {
+      "value" : "Find Art Events",
+      "expressions" : "trigger(find_art_events)"
+    } ]
+  } ]
+}

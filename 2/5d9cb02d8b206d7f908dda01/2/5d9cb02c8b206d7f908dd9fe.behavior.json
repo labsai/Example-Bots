@@ -1,0 +1,265 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "Get events",
+    "executionStrategy" : "executeAll",
+    "behaviorRules" : [ {
+      "name" : "Tech events information",
+      "actions" : [ "tech_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_tech_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Dance events information",
+      "actions" : [ "dance_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_dance_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Arts events information",
+      "actions" : [ "art_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_art_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Beliefs events information",
+      "actions" : [ "belief_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_belief_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Book Clubs events information",
+      "actions" : [ "bookClub_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_bookClub_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Career and Business events information",
+      "actions" : [ "careerAndBusiness_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_careerAndBusiness_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Learning events information",
+      "actions" : [ "learning_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_learning_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Fashion and Beauty events information",
+      "actions" : [ "fashionAndBeauty_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_fashionAndBeauty_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Film events information",
+      "actions" : [ "film_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_film_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Food and Drink events information",
+      "actions" : [ "foodAndDrink_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_foodAndDrink_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Sci-Fi and Games events information",
+      "actions" : [ "sciFiAndGames_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_sciFiAndGames_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Health and Wellness events information",
+      "actions" : [ "healthAndWellness_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_healthAndWellness_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Hobbies and Crafts events information",
+      "actions" : [ "hobbiesAndCrafts_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_hobbiesAndCrafts_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Language and Culture events information",
+      "actions" : [ "languageAndCulture_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_languageAndCulture_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "lgbtq events information",
+      "actions" : [ "lgbtq_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_lgbtq_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Movements events information",
+      "actions" : [ "movement_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_movement_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Music events information",
+      "actions" : [ "music_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_music_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Outdoors and Adventure events information",
+      "actions" : [ "outdoorAndAdventure_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_outdoorAndAdventure_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Family events information",
+      "actions" : [ "family_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_family_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Pets events information",
+      "actions" : [ "pet_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_pet_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Photography events information",
+      "actions" : [ "photography_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_photography_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Social events information",
+      "actions" : [ "social_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_social_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Sports and Fitness events information",
+      "actions" : [ "sportsAndFitness_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_sportsAndFitness_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Writing events information",
+      "actions" : [ "writing_events_information" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(find_writing_events)"
+        },
+        "conditions" : [ ]
+      } ]
+    }, {
+      "name" : "Conversation Start",
+      "actions" : [ "welcome" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "CONVERSATION_START"
+        }
+      } ]
+    }, {
+      "name" : "Conversation End",
+      "actions" : [ "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "trigger(*)"
+        }
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,62 @@
+{
+  "packageExtensions" : [ {
+    "type" : "eddi://ai.labs.parser",
+    "extensions" : {
+      "dictionaries" : [ {
+        "type" : "eddi://ai.labs.parser.dictionaries.integer"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.decimal"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.punctuation"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.email"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.time"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.ordinalNumber"
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.regular",
+        "config" : {
+          "uri" : "eddi://ai.labs.regulardictionary/regulardictionarystore/regulardictionaries/5d9cb02c8b206d7f908dd9fd?version=1"
+        }
+      } ],
+      "corrections" : [ {
+        "type" : "eddi://ai.labs.parser.corrections.stemming",
+        "config" : {
+          "language" : "english",
+          "lookupIfKnown" : "false"
+        }
+      }, {
+        "type" : "eddi://ai.labs.parser.corrections.levenshtein",
+        "config" : {
+          "distance" : "2"
+        }
+      }, {
+        "type" : "eddi://ai.labs.parser.corrections.mergedTerms"
+      } ]
+    },
+    "config" : { }
+  }, {
+    "type" : "eddi://ai.labs.behavior",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.behavior/behaviorstore/behaviorsets/5d9cb02c8b206d7f908dd9fe?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.httpcalls",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.httpcalls/httpcallsstore/httpcalls/5d9cb02c8b206d7f908dd9ff?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.output",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.output/outputstore/outputsets/5d9cb02d8b206d7f908dda00?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.templating",
+    "extensions" : { },
+    "config" : { }
+  } ]
+}

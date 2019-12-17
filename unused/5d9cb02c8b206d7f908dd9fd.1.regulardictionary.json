@@ -1,0 +1,307 @@
+{
+  "words" : [ {
+    "word" : "tech",
+    "expressions" : "trigger(find_tech_events)",
+    "frequency" : 0
+  }, {
+    "word" : "dance",
+    "expressions" : "trigger(find_dance_events)",
+    "frequency" : 0
+  }, {
+    "word" : "arts",
+    "expressions" : "trigger(find_art_events)",
+    "frequency" : 0
+  }, {
+    "word" : "beliefs",
+    "expressions" : "trigger(find_belief_events)",
+    "frequency" : 0
+  }, {
+    "word" : "learning",
+    "expressions" : "trigger(find_learning_events)",
+    "frequency" : 0
+  }, {
+    "word" : "film",
+    "expressions" : "trigger(find_film_events)",
+    "frequency" : 0
+  }, {
+    "word" : "lgbtq",
+    "expressions" : "trigger(find_lgbtq_events)",
+    "frequency" : 0
+  }, {
+    "word" : "movement",
+    "expressions" : "trigger(find_movement_events)",
+    "frequency" : 0
+  }, {
+    "word" : "music",
+    "expressions" : "trigger(find_music_events)",
+    "frequency" : 0
+  }, {
+    "word" : "family",
+    "expressions" : "trigger(find_family_events)",
+    "frequency" : 0
+  }, {
+    "word" : "pets",
+    "expressions" : "trigger(find_pets_events)",
+    "frequency" : 0
+  }, {
+    "word" : "photography",
+    "expressions" : "trigger(find_photography_events)",
+    "frequency" : 0
+  }, {
+    "word" : "social",
+    "expressions" : "trigger(find_social_events)",
+    "frequency" : 0
+  }, {
+    "word" : "writing",
+    "expressions" : "trigger(find_writing_events)",
+    "frequency" : 0
+  } ],
+  "regExs" : [ ],
+  "phrases" : [ {
+    "phrase" : "career and business",
+    "expressions" : "trigger(find_careerAndBusiness_events)"
+  }, {
+    "phrase" : "fashion and beauty",
+    "expressions" : "trigger(find_fashionAndBeauty_events)"
+  }, {
+    "phrase" : "food and drink",
+    "expressions" : "trigger(find_foodAndDrink_events)"
+  }, {
+    "phrase" : "sci-fi and game",
+    "expressions" : "trigger(find_sciFiAndGame_events)"
+  }, {
+    "phrase" : "health and wellness",
+    "expressions" : "trigger(find_healthAndWellness_events)"
+  }, {
+    "phrase" : "hobbies and crafts",
+    "expressions" : "trigger(find_hobbiesAndCrafts_events)"
+  }, {
+    "phrase" : "language and culture",
+    "expressions" : "trigger(find_languageAndCulture_events)"
+  }, {
+    "phrase" : "outdoors and adventure",
+    "expressions" : "trigger(find_outdoorsAndAdventure_events)"
+  }, {
+    "phrase" : "book clubs",
+    "expressions" : "trigger(find_bookClub_events)"
+  }, {
+    "phrase" : "sports and fitness",
+    "expressions" : "trigger(find_sportsAndFitness_events)"
+  }, {
+    "phrase" : "Find tech events near me",
+    "expressions" : "trigger(find_tech_events)"
+  }, {
+    "phrase" : "Find tech events",
+    "expressions" : "trigger(find_tech_events)"
+  }, {
+    "phrase" : "Tell me tech events",
+    "expressions" : "trigger(find_tech_events)"
+  }, {
+    "phrase" : "Find dance events near me",
+    "expressions" : "trigger(find_dance_events)"
+  }, {
+    "phrase" : "Find dance events",
+    "expressions" : "trigger(find_dance_events)"
+  }, {
+    "phrase" : "Tell me dance events",
+    "expressions" : "trigger(find_dance_events)"
+  }, {
+    "phrase" : "Find art events near me",
+    "expressions" : "trigger(find_art_events)"
+  }, {
+    "phrase" : "Find art events",
+    "expressions" : "trigger(find_art_events)"
+  }, {
+    "phrase" : "Tell me art events",
+    "expressions" : "trigger(find_art_events)"
+  }, {
+    "phrase" : "Find belief events near me",
+    "expressions" : "trigger(find_belief_events)"
+  }, {
+    "phrase" : "Find belief events",
+    "expressions" : "trigger(find_belief_events)"
+  }, {
+    "phrase" : "Tell me belief events",
+    "expressions" : "trigger(find_belief_events)"
+  }, {
+    "phrase" : "Find book club events near me",
+    "expressions" : "trigger(find_bookClub_events)"
+  }, {
+    "phrase" : "Find book club events",
+    "expressions" : "trigger(find_bookClub_events)"
+  }, {
+    "phrase" : "Tell me book club events",
+    "expressions" : "trigger(find_bookClub_events)"
+  }, {
+    "phrase" : "Find career and business events near me",
+    "expressions" : "trigger(find_careerAndBusiness_events)"
+  }, {
+    "phrase" : "Find career and business events",
+    "expressions" : "trigger(find_careerAndBusiness_events)"
+  }, {
+    "phrase" : "Tell me career and business events",
+    "expressions" : "trigger(find_careerAndBusiness_events)"
+  }, {
+    "phrase" : "Find learning events near me",
+    "expressions" : "trigger(find_learning_events)"
+  }, {
+    "phrase" : "Find learning events",
+    "expressions" : "trigger(find_learning_events)"
+  }, {
+    "phrase" : "Tell me learning events",
+    "expressions" : "trigger(find_learning_events)"
+  }, {
+    "phrase" : "Find fashion and beauty events near me",
+    "expressions" : "trigger(find_fashionAndBeauty_events)"
+  }, {
+    "phrase" : "Find fashion and beauty events",
+    "expressions" : "trigger(find_fashionAndBeauty_events)"
+  }, {
+    "phrase" : "Tell me fashion and beauty events",
+    "expressions" : "trigger(find_fashionAndBeauty_events)"
+  }, {
+    "phrase" : "Find film events near me",
+    "expressions" : "trigger(find_film_events)"
+  }, {
+    "phrase" : "Find film events",
+    "expressions" : "trigger(find_film_events)"
+  }, {
+    "phrase" : "Tell me film events",
+    "expressions" : "trigger(find_film_events)"
+  }, {
+    "phrase" : "Find food and drink events near me",
+    "expressions" : "trigger(find_foodAndDrink_events)"
+  }, {
+    "phrase" : "Find food and drink events",
+    "expressions" : "trigger(find_foodAndDrink_events)"
+  }, {
+    "phrase" : "Tell me food and drink events",
+    "expressions" : "trigger(find_foodAndDrink_events)"
+  }, {
+    "phrase" : "Find sci-fi and games events near me",
+    "expressions" : "trigger(find_sciFiAndGames_events)"
+  }, {
+    "phrase" : "Find sci-fi and games events",
+    "expressions" : "trigger(find_sciFiAndGames_events)"
+  }, {
+    "phrase" : "Tell me sci-fi and games events",
+    "expressions" : "trigger(find_sciFiAndGames_events)"
+  }, {
+    "phrase" : "Find health and wellness events near me",
+    "expressions" : "trigger(find_healthAndWellness_events)"
+  }, {
+    "phrase" : "Find health and wellness events",
+    "expressions" : "trigger(find_healthAndWellness_events)"
+  }, {
+    "phrase" : "Tell me health and wellness events",
+    "expressions" : "trigger(find_healthAndWellness_events)"
+  }, {
+    "phrase" : "Find hobbies and crafts events near me",
+    "expressions" : "trigger(find_hobbiesAndCrafts_events)"
+  }, {
+    "phrase" : "Find hobbies and crafts events",
+    "expressions" : "trigger(find_hobbiesAndCrafts_events)"
+  }, {
+    "phrase" : "Tell me hobbies and crafts events",
+    "expressions" : "trigger(find_hobbiesAndCrafts_events)"
+  }, {
+    "phrase" : "Find language and culture events near me",
+    "expressions" : "trigger(find_languageAndCulture_events)"
+  }, {
+    "phrase" : "Find language and culture events",
+    "expressions" : "trigger(find_languageAndCulture_events)"
+  }, {
+    "phrase" : "Tell me language and culture events",
+    "expressions" : "trigger(find_languageAndCulture_events)"
+  }, {
+    "phrase" : "Find lgbtq events near me",
+    "expressions" : "trigger(find_lgbtq_events)"
+  }, {
+    "phrase" : "Find lgbtq events",
+    "expressions" : "trigger(find_lgbtq_events)"
+  }, {
+    "phrase" : "Tell me lgbtq events",
+    "expressions" : "trigger(find_lgbtq_events)"
+  }, {
+    "phrase" : "Find movement events near me",
+    "expressions" : "trigger(find_movement_events)"
+  }, {
+    "phrase" : "Find movement events",
+    "expressions" : "trigger(find_movement_events)"
+  }, {
+    "phrase" : "Tell me movement events",
+    "expressions" : "trigger(find_movement_events)"
+  }, {
+    "phrase" : "Find music events near me",
+    "expressions" : "trigger(find_music_events)"
+  }, {
+    "phrase" : "Find music events",
+    "expressions" : "trigger(find_music_events)"
+  }, {
+    "phrase" : "Tell me music events",
+    "expressions" : "trigger(find_music_events)"
+  }, {
+    "phrase" : "Find outdoors and adventure events near me",
+    "expressions" : "trigger(find_outdoorsAndAdventure_events)"
+  }, {
+    "phrase" : "Find outdoors and adventure events",
+    "expressions" : "trigger(find_outdoorsAndAdventure_events)"
+  }, {
+    "phrase" : "Tell me outdoors and adventure events",
+    "expressions" : "trigger(find_outdoorsAndAdventure_events)"
+  }, {
+    "phrase" : "Find family events near me",
+    "expressions" : "trigger(find_family_events)"
+  }, {
+    "phrase" : "Find family events",
+    "expressions" : "trigger(find_family_events)"
+  }, {
+    "phrase" : "Tell me family events",
+    "expressions" : "trigger(find_family_events)"
+  }, {
+    "phrase" : "Find pets events near me",
+    "expressions" : "trigger(find_pets_events)"
+  }, {
+    "phrase" : "Find pets events",
+    "expressions" : "trigger(find_pets_events)"
+  }, {
+    "phrase" : "Tell me pets events",
+    "expressions" : "trigger(find_pets_events)"
+  }, {
+    "phrase" : "Find photography events near me",
+    "expressions" : "trigger(find_photography_events)"
+  }, {
+    "phrase" : "Find photography events",
+    "expressions" : "trigger(find_photography_events)"
+  }, {
+    "phrase" : "Tell me photography events",
+    "expressions" : "trigger(find_photography_events)"
+  }, {
+    "phrase" : "Find social events near me",
+    "expressions" : "trigger(find_social_events)"
+  }, {
+    "phrase" : "Find social events",
+    "expressions" : "trigger(find_social_events)"
+  }, {
+    "phrase" : "Tell me social events",
+    "expressions" : "trigger(find_social_events)"
+  }, {
+    "phrase" : "Find sports and fitness events near me",
+    "expressions" : "trigger(find_sportsAndFitness_events)"
+  }, {
+    "phrase" : "Find sports and fitness events",
+    "expressions" : "trigger(find_sportsAndFitness_events)"
+  }, {
+    "phrase" : "Tell me sports and fitness events",
+    "expressions" : "trigger(find_sportsAndFitness_events)"
+  }, {
+    "phrase" : "Find writing events near me",
+    "expressions" : "trigger(find_writing_events)"
+  }, {
+    "phrase" : "Find writing events",
+    "expressions" : "trigger(find_writing_events)"
+  }, {
+    "phrase" : "Tell me writing events",
+    "expressions" : "trigger(find_writing_events)"
+  } ]
+}
