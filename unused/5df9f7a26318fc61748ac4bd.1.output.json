@@ -1,0 +1,507 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome_big_5",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Ich stelle dir nun ein paar Fragen zu deiner Person." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Bitte antworte m&ouml;glichst spontan, ohne langes Nachdenken." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Inwieweit treffen die folgenden Aussagen auf dich zu?</b>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich erledige Aufgaben gr&uuml;ndlich.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ001(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ001(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ001(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ001(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ001(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ001(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ001(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 1,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich bin eher zur&uuml;ckhaltend, reserviert.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ002(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ002(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ002(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ002(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ002(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ002(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ002(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 2,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich habe eine aktive Vorstellungskraft, bin fantasievoll.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ003(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ003(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ003(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ003(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ003(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ003(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ003(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 3,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ004(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ004(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ004(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ004(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ004(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ004(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ004(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 4,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ005(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ005(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ005(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ005(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ005(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ005(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ005(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 5,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Halbzeit, aber keine Pause f&uuml;r dich, es folgen noch f&uuml;nf Fragen! 😉" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<img src=\"https://media.giphy.com/media/3EUgWmcX2NOBa/giphy.gif\" alt=\"Halbzeit!\" />" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich neige dazu, andere zu kritisieren.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ006(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ006(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ006(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ006(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ006(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ006(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ006(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 6,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich werde leicht nerv&ouml;s und unsicher.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ007(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ007(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ007(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ007(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ007(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ007(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ007(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 7,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich habe nur wenig k&uuml;nstlerisches Interesse.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ008(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ008(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ008(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ008(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ008(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ008(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ008(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 8,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich bin bequem, neige zur Faulheit.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ009(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ009(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ009(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ009(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ009(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ009(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ009(A7))"
+    } ]
+  }, {
+    "action" : "next_question",
+    "timesOccurred" : 9,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Ich gehe aus mir heraus, bin gesellig.</b>" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Trifft gar nicht zu",
+      "expressions" : "property(Q05_SQ010(A1))"
+    }, {
+      "value" : "Trifft nicht zu",
+      "expressions" : "property(Q05_SQ010(A2))"
+    }, {
+      "value" : "Trifft eher nicht zu",
+      "expressions" : "property(Q05_SQ010(A3))"
+    }, {
+      "value" : "Weder noch",
+      "expressions" : "property(Q05_SQ010(A4))"
+    }, {
+      "value" : "Trifft eher zu",
+      "expressions" : "property(Q05_SQ010(A5))"
+    }, {
+      "value" : "Trifft zu",
+      "expressions" : "property(Q05_SQ010(A6))"
+    }, {
+      "value" : "Trifft voll und ganz zu",
+      "expressions" : "property(Q05_SQ010(A7))"
+    } ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Gut gemacht! 🙂",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jetzt abschließend noch ganz schnell Fragen für die Statistik...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jetzt kennen wir uns schon eine Weile. Und trotzdem weiß ich noch immer nicht, wie alt du dieses Jahr geworden bist!",
+        "delay" : 5000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Also: Wie alt bist du?",
+        "delay" : 5000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 1,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Bitte nenne mir dein Alter als Zahl (zb 42)",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 2,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Bitte bitte. Ohne einer Zahl zwischen 16-120 kommen wir hier nicht weiter 😏",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 3,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Wirklich. Du magst es mir nicht glauben, aber ohne einer ganzzahligen Zahl wird das heute nicht mehr...",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 4,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Also gut, du bist hartnäckig. Schön. Probieren wir es anders...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Ich bin technisch gesehen schon 13 Jahre herangereift.",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Welchen Reifejahrgang darf man dir zusprechen? 👀",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 5,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Ich weiß nicht mehr weiter...", "Schade, dass wir hier nicht weiter kommen..." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_gender",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "[[${memory.current.input}]]! Für dein Alter hast du dich aber gut gehalten!",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "image",
+      "valueAlternatives" : [ {
+        "uri" : "https://i.giphy.com/media/l0IyajjbNiRvCr7RC/giphy.webp",
+        "delay" : 4000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Mann, Frau oder weniger Mainsteam...?",
+        "delay" : 5000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Weiblich",
+      "expressions" : "property(geschlecht(weiblich))"
+    }, {
+      "value" : "Männlich",
+      "expressions" : "property(geschlecht(maennlich))"
+    }, {
+      "value" : "Divers",
+      "expressions" : "property(geschlecht(divers))"
+    }, {
+      "value" : "Keine Angaben",
+      "expressions" : "property(geschlecht(keine_angaben))"
+    } ]
+  }, {
+    "action" : "ask_for_job",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Verrate mir noch in welchem Beruf du arbeitest",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_education",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Letzte Frage vor der feierlichen &Uuml;berreichung des Zertifikats...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Was ist deine höchste abgeschlossene Ausbildung?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Pflichtschule",
+      "expressions" : "property(education(pflichtschule))"
+    }, {
+      "value" : "Lehre",
+      "expressions" : "property(education(lehre))"
+    }, {
+      "value" : "Matura",
+      "expressions" : "property(education(matura))"
+    }, {
+      "value" : "Hochschulabschluss",
+      "expressions" : "property(education(hochschulabschluss))"
+    } ]
+  }, {
+    "action" : "demographic_questions_end",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jaaa 🥳",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "We did it!!!",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "image",
+      "valueAlternatives" : [ {
+        "uri" : "https://i.giphy.com/media/mp1JYId8n0t3y/giphy.webp",
+        "delay" : 4000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Weiter zum Zerfifikat!",
+      "expressions" : "end_conversation"
+    } ]
+  } ]
+}

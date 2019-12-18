@@ -1,0 +1,5 @@
+{
+  "packages" : [ "eddi://ai.labs.package/packagestore/packages/5df9f7a16318fc61748ac4b5?version=4", "eddi://ai.labs.package/packagestore/packages/5df9f7a26318fc61748ac4bf?version=5", "eddi://ai.labs.package/packagestore/packages/5df9f7a36318fc61748ac4c3?version=1" ],
+  "channels" : [ ],
+  "gitBackupSettings" : { }
+}

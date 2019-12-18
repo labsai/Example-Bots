@@ -1,0 +1,8 @@
+{
+  "words" : [ ],
+  "regExs" : [ {
+    "regEx" : "^[A-Za-z0-9,.@_-]*$",
+    "expressions" : "valid_input_for_username"
+  } ],
+  "phrases" : [ ]
+}

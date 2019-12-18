@@ -1,0 +1,211 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome_big_5",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Ich stelle dir nun ein paar Fragen zu deiner Person." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Bitte antworte m&ouml;glichst spontan, ohne langes Nachdenken." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "<b>Inwieweit treffen die folgenden Aussagen auf dich zu?</b>" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Gut gemacht! 🙂",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jetzt abschließend noch ganz schnell Fragen für die Statistik...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jetzt kennen wir uns schon eine Weile. Und trotzdem weiß ich noch immer nicht, wie alt du dieses Jahr geworden bist!",
+        "delay" : 5000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Also: Wie alt bist du?",
+        "delay" : 5000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 1,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Bitte nenne mir dein Alter als Zahl (zb 42)",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 2,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Bitte bitte. Ohne einer Zahl zwischen 16-120 kommen wir hier nicht weiter 😏",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 3,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Wirklich. Du magst es mir nicht glauben, aber ohne einer ganzzahligen Zahl wird das heute nicht mehr...",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 4,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Also gut, du bist hartnäckig. Schön. Probieren wir es anders...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Ich bin technisch gesehen schon 13 Jahre herangereift.",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Welchen Reifejahrgang darf man dir zusprechen? 👀",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_age",
+    "timesOccurred" : 5,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Ich weiß nicht mehr weiter...", "Schade, dass wir hier nicht weiter kommen..." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_gender",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "[[${memory.current.input}]]! Für dein Alter hast du dich aber gut gehalten!",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "image",
+      "valueAlternatives" : [ {
+        "uri" : "https://i.giphy.com/media/l0IyajjbNiRvCr7RC/giphy.webp",
+        "delay" : 4000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Mann, Frau oder weniger Mainsteam...?",
+        "delay" : 5000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Weiblich",
+      "expressions" : "property(geschlecht(weiblich))"
+    }, {
+      "value" : "Männlich",
+      "expressions" : "property(geschlecht(maennlich))"
+    }, {
+      "value" : "Divers",
+      "expressions" : "property(geschlecht(divers))"
+    }, {
+      "value" : "Keine Angaben",
+      "expressions" : "property(geschlecht(keine_angaben))"
+    } ]
+  }, {
+    "action" : "ask_for_job",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Verrate mir noch in welchem Beruf du arbeitest",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_education",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Letzte Frage vor der feierlichen &Uuml;berreichung des Zertifikats...",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Was ist deine höchste abgeschlossene Ausbildung?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Pflichtschule",
+      "expressions" : "property(education(pflichtschule))"
+    }, {
+      "value" : "Lehre",
+      "expressions" : "property(education(lehre))"
+    }, {
+      "value" : "Matura",
+      "expressions" : "property(education(matura))"
+    }, {
+      "value" : "Hochschulabschluss",
+      "expressions" : "property(education(hochschulabschluss))"
+    } ]
+  }, {
+    "action" : "demographic_questions_end",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Jaaa 🥳",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "We did it!!!",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "image",
+      "valueAlternatives" : [ {
+        "uri" : "https://i.giphy.com/media/mp1JYId8n0t3y/giphy.webp",
+        "delay" : 4000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Weiter zum Zerfifikat!",
+      "expressions" : "end_conversation"
+    } ]
+  } ]
+}

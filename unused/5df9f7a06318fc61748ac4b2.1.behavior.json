@@ -1,0 +1,159 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "OnBoarding",
+    "behaviorRules" : [ {
+      "name" : "Welcome",
+      "actions" : [ "welcome" ],
+      "conditions" : [ {
+        "type" : "contextmatcher",
+        "configs" : {
+          "contextType" : "string",
+          "contextKey" : "registration",
+          "string" : "true"
+        }
+      } ]
+    }, {
+      "name" : "user think had been introduced",
+      "actions" : [ "user_think_had_been_introduced", "ask_for_username" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "confirmation(intro_question(user_think_had_been_introduced))"
+        }
+      } ]
+    }, {
+      "name" : "First Contact",
+      "actions" : [ "first_contact", "ask_for_username" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "confirmation(intro_question(first_contact))"
+        }
+      } ]
+    }, {
+      "name" : "Username already exists",
+      "actions" : [ "username_already_exists", "ask_for_username" ],
+      "conditions" : [ {
+        "type" : "contextmatcher",
+        "configs" : {
+          "contextType" : "string",
+          "contextKey" : "username_exists",
+          "string" : "true"
+        }
+      } ]
+    }, {
+      "name" : "Validate Username",
+      "actions" : [ "invalid_username", "ask_for_username" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_username",
+          "occurrence" : "lastStep"
+        }
+      }, {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "dynamicvaluematcher",
+          "configs" : {
+            "valuePath" : "memory.current.input",
+            "contains" : " "
+          }
+        }, {
+          "type" : "negation",
+          "conditions" : [ {
+            "type" : "inputmatcher",
+            "configs" : {
+              "expressions" : "valid_input_for_username"
+            }
+          } ]
+        }, {
+          "type" : "negation",
+          "conditions" : [ {
+            "type" : "sizematcher",
+            "configs" : {
+              "valuePath" : "memory.current.input.length",
+              "max" : "100"
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "name" : "Save Username",
+      "actions" : [ "save_username", "ask_for_password" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_username",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Validate Password",
+      "actions" : [ "invalid_password", "ask_for_password" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_password",
+          "occurrence" : "lastStep"
+        }
+      }, {
+        "type" : "negation",
+        "conditions" : [ {
+          "type" : "sizematcher",
+          "configs" : {
+            "valuePath" : "memory.current.input.length",
+            "min" : "6"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "Repeat Password",
+      "actions" : [ "ask_for_password_repeat" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_password",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Validate Repeated Password",
+      "actions" : [ "password_repeated_error", "ask_for_password" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_password_repeat",
+          "occurrence" : "lastStep"
+        }
+      }, {
+        "type" : "dynamicvaluematcher",
+        "configs" : {
+          "valuePath" : "memory.current.input != memory.last.input",
+          "equals" : "true"
+        }
+      } ]
+    }, {
+      "name" : "Save password",
+      "actions" : [ "save_password", "registration_end" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_password_repeat",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Conversation End",
+      "actions" : [ "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "end_conversation"
+        }
+      } ]
+    } ]
+  } ]
+}

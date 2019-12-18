@@ -1,0 +1,37 @@
+{
+  "packageExtensions" : [ {
+    "type" : "eddi://ai.labs.parser",
+    "extensions" : {
+      "dictionaries" : [ {
+        "type" : "eddi://ai.labs.parser.dictionaries.regular",
+        "config" : {
+          "uri" : "eddi://ai.labs.regulardictionary/regulardictionarystore/regulardictionaries/5df9f7a06318fc61748ac4b1?version=1"
+        }
+      }, {
+        "type" : "eddi://ai.labs.parser.dictionaries.regular",
+        "config" : {
+          "uri" : "eddi://ai.labs.regulardictionary/regulardictionarystore/regulardictionaries/5df9f90c6318fc61748ac4c5?version=2"
+        }
+      } ]
+    },
+    "config" : { }
+  }, {
+    "type" : "eddi://ai.labs.behavior",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.behavior/behaviorstore/behaviorsets/5df9f7a06318fc61748ac4b2?version=2"
+    }
+  }, {
+    "type" : "eddi://ai.labs.output",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.output/outputstore/outputsets/5df9f7a16318fc61748ac4b3?version=1"
+    }
+  }, {
+    "type" : "eddi://ai.labs.property",
+    "extensions" : { },
+    "config" : {
+      "uri" : "eddi://ai.labs.property/propertysetterstore/propertysetters/5df9f7a16318fc61748ac4b4?version=1"
+    }
+  } ]
+}

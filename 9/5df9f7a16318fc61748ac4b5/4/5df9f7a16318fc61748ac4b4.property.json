@@ -1,0 +1,21 @@
+{
+  "setOnActions" : [ {
+    "actions" : [ "save_username" ],
+    "setProperties" : [ {
+      "name" : "username",
+      "value" : "[[${memory.current.input}]]",
+      "scope" : "conversation",
+      "fromObjectPath" : "",
+      "override" : true
+    } ]
+  }, {
+    "actions" : [ "save_password" ],
+    "setProperties" : [ {
+      "name" : "password",
+      "value" : "[[${memory.current.input}]]",
+      "scope" : "conversation",
+      "fromObjectPath" : "",
+      "override" : true
+    } ]
+  } ]
+}

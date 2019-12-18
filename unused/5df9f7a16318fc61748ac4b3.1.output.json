@@ -1,0 +1,208 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "image",
+      "valueAlternatives" : [ {
+        "uri" : "https://i.giphy.com/media/FsV53qG0wZE7cIkV8W/giphy.webp"
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Hallo!",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "👋",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Freut mich deine Bekannschaft zu machen!",
+        "delay" : 4000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Moment einmal, kennen wir uns nicht bereits? 👀",
+        "delay" : 4000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Ja, wir wurden uns bereits vorgestellt!",
+      "expressions" : "confirmation(intro_question(user_think_had_been_introduced))"
+    }, {
+      "value" : "Nein, wir kennen einander noch nicht.",
+      "expressions" : "confirmation(intro_question(first_contact))"
+    } ]
+  }, {
+    "action" : "user_think_had_been_introduced",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Bist du dir da wirklich sicher? 🤔" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Mmmh, wahrscheinlich hast du recht. Ich bin sehr vergesslich manchmal 😏" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "first_contact",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Dachte ich mir's doch gleich!" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Darf ich mich bei dir vorstellen..." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Mein Name ist Josef Sicher. Hocherfreut deine Bekannschaft zu machen." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_username",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Darf ich fragen..." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Welchen Benutzernamen möchtest du verwenden?" ]
+    }, {
+      "type" : "textInput",
+      "valueAlternatives" : [ {
+        "placeholder" : "Benutzername hier rein..."
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "invalid_username",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Das System sagt mir leider, dass dieser Benutzername ungültig ist. 😏" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Erlaubte Zeichen sind: A-Z (groß/klein), Zahlen, sowie die Zeichen @,.-_. Keine Leerzeichen, keine Umlaute!" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "username_already_exists",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Oje... der von dir gewählte Username wurde offenbar schon von einem anderen Nutzer ausgesucht 😏" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_username",
+    "timesOccurred" : 1,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Bitte wähle einen anderen Benutzernamen:" ]
+    }, {
+      "type" : "textInput",
+      "valueAlternatives" : [ {
+        "placeholder" : "Benutzername hier rein..."
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "save_username",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Wow, ein schöner Benutzername 😊" ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_password",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Welches Passwort hättest du gerne?" ]
+    }, {
+      "type" : "textInput",
+      "valueAlternatives" : [ {
+        "isPassword" : true,
+        "placeholder" : "Passwort hier rein..."
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "invalid_password",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Mindestens 6 Zeichen sollte dein Passwort schon haben. 👀" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Immerhin sind wir hier bei einer Security-Schulung 😉" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Also..." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "invalid_password",
+    "timesOccurred" : 1,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Ganz im Ernst, mindestens 6 Zeichen, du hast [[${memory.current.input.length}]] Zeichen eingeben. 😏" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Ein sichereres Passwort bitte!" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Also..." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "ask_for_password_repeat",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Bitte nochmal zur Sicherheit das gleiche Passwort eintippen:" ]
+    }, {
+      "type" : "textInput",
+      "valueAlternatives" : [ {
+        "isPassword" : true,
+        "placeholder" : "Passwort hier rein..."
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "password_repeated_error",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Die beiden Passwörter sind leider nicht gleich." ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Probieren wir's gleich nochmal.." ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "registration_end",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ "Super!" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Jetzt geht's los!" ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ "Bereit?" ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Bereit!",
+      "expressions" : "end_conversation"
+    } ]
+  } ]
+}

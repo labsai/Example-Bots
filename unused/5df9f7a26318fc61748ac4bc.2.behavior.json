@@ -1,0 +1,102 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "BIG-5 Survey",
+    "behaviorRules" : [ {
+      "name" : "Welcome",
+      "actions" : [ "welcome_big_5", "ask_for_age" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "contextmatcher",
+          "configs" : {
+            "contextType" : "string",
+            "contextKey" : "big5",
+            "string" : "true"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "start_demographics"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "Verify Age",
+      "actions" : [ "invalid_age", "ask_for_age" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_age",
+          "occurrence" : "lastStep"
+        }
+      }, {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "negation",
+          "conditions" : [ {
+            "type" : "inputmatcher",
+            "configs" : {
+              "expressions" : "integer(*)"
+            }
+          } ]
+        }, {
+          "type" : "negation",
+          "conditions" : [ {
+            "type" : "sizematcher",
+            "configs" : {
+              "valuePath" : "memory.current.input",
+              "min" : "16",
+              "max" : "120"
+            }
+          } ]
+        } ]
+      } ]
+    }, {
+      "name" : "Demographic Questions - Gender",
+      "actions" : [ "ask_for_gender" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_age",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Demographic Questions - Job",
+      "actions" : [ "ask_for_job" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_gender",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Demographic Questions - Education",
+      "actions" : [ "ask_for_education" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_job",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    }, {
+      "name" : "Demographic Questions - End",
+      "actions" : [ "demographic_questions_end" ],
+      "conditions" : [ {
+        "type" : "actionmatcher",
+        "configs" : {
+          "actions" : "ask_for_education",
+          "occurrence" : "lastStep"
+        }
+      } ]
+    } ]
+  } ]
+}

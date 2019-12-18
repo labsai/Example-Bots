@@ -1,0 +1,11 @@
+{
+  "words" : [ ],
+  "regExs" : [ ],
+  "phrases" : [ {
+    "phrase" : "start registration",
+    "expressions" : "start_registration"
+  }, {
+    "phrase" : "start demographics",
+    "expressions" : "start_demographics"
+  } ]
+}
