@@ -1,0 +1,37 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "OnBoarding",
+    "behaviorRules" : [ {
+      "name" : "Welcome",
+      "actions" : [ "welcome" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "contextmatcher",
+          "configs" : {
+            "contextType" : "string",
+            "contextKey" : "semester_party",
+            "string" : "true"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "start_semester_party"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "user think had been introduced",
+      "actions" : [ "user_think_had_been_introduced", "ask_for_username" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "confirmation(intro_question(user_think_had_been_introduced))"
+        }
+      } ]
+    } ]
+  } ]
+}

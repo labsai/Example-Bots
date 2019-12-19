@@ -1,0 +1,35 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Guess what!!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "There is a semester party happening at your campus in two weeks 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you think? Want to go? 😁",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "no",
+      "expressions" : "welcome_no"
+    }, {
+      "value" : "not sure",
+      "expressions" : "welcome_not_sure"
+    }, {
+      "value" : "yes",
+      "expressions" : "welcome_yes"
+    } ]
+  } ]
+}
