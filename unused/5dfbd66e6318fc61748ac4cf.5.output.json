@@ -1,0 +1,177 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Guess what!!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "There is a semester party happening at your campus in two weeks 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you think? Want to go? 😁",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "no",
+      "expressions" : "semester_party(no_go)"
+    }, {
+      "value" : "not sure",
+      "expressions" : "semester_party(not_sure)"
+    }, {
+      "value" : "yes",
+      "expressions" : "semester_party(going)"
+    } ]
+  }, {
+    "action" : "semester_party_no_go",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Oh, I see.",
+        "delay" : 800
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Can I ask why? 😊",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Do you not have time or anyone to go with maybe?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "I don't want to talk about it",
+      "expressions" : "no_go(dont_want_to_talk)"
+    }, {
+      "value" : "No reason",
+      "expressions" : "no_go(no_reason)"
+    }, {
+      "value" : "Do not have time/have other plans",
+      "expressions" : "no_go(do_not_have_time)"
+    }, {
+      "value" : "Have no one to go with",
+      "expressions" : "no_go(have_no_one_to_go_with)"
+    }, {
+      "value" : "It's not my thing/don't like parties",
+      "expressions" : "no_go(dont_like_parties)"
+    } ]
+  }, {
+    "action" : "dont_want_to_talk",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Thats ok!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Let me know if you change your mind 😃",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "no_reason",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Ok, have a good day.",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Talk soon 😃",
+        "delay" : 1000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "dont_like_parties",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "No problem!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Parties is not really my thing either 👌",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "have_no_one_to_go_with",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Going alone can be very scary!",
+        "delay" : 800
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "But you know what? ",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "I know some students who are in the same situation as you.",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "I would gladly put you in touch with these students!!",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "It will make it less scary to go and maybe you will meet a potential new friend as well 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you say?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "yes",
+      "expressions" : "have_no_one_to_go_with(wants_to_be_connected)"
+    }, {
+      "value" : "No",
+      "expressions" : "have_no_one_to_go_with(dont_want_to_be_connected)"
+    }, {
+      "value" : "Not sure",
+      "expressions" : "have_no_one_to_go_with(not_sure_if_want_to_be_connected)"
+    }, {
+      "value" : "Need more information",
+      "expressions" : "have_no_one_to_go_with(not_sure_if_want_to_be_connected)"
+    } ]
+  } ]
+}

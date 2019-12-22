@@ -1,0 +1,76 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Guess what!!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "There is a semester party happening at your campus in two weeks 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you think? Want to go? 😁",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "no",
+      "expressions" : "semester_party(no_go)"
+    }, {
+      "value" : "not sure",
+      "expressions" : "semester_party(not_sure)"
+    }, {
+      "value" : "yes",
+      "expressions" : "semester_party(going)"
+    } ]
+  }, {
+    "action" : "semester_party_no_go",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Oh, I see.",
+        "delay" : 800
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Can I ask why? 😊",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Do you not have time or anyone to go with maybe?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "I don't want to talk about it",
+      "expressions" : "no_go(dont_want_to_talk)"
+    }, {
+      "value" : "No reason",
+      "expressions" : "no_go(no_reason)"
+    }, {
+      "value" : "Do not have time/have other plans",
+      "expressions" : "no_go(do_not_have_time_or_have_other_plans)"
+    }, {
+      "value" : "Have no one to go with",
+      "expressions" : "no_go(have_no_one_to_go_with)"
+    }, {
+      "value" : "It's not my thing/don't like parties",
+      "expressions" : "no_go(its_not_my_thing_or_dont_like_parties)"
+    }, {
+      "value" : "I need more information",
+      "expressions" : "no_go(need_more_information)"
+    } ]
+  } ]
+}

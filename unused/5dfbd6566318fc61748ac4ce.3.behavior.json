@@ -1,0 +1,48 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "OnBoarding",
+    "behaviorRules" : [ {
+      "name" : "Welcome",
+      "actions" : [ "welcome" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "contextmatcher",
+          "configs" : {
+            "contextType" : "string",
+            "contextKey" : "semester_party",
+            "string" : "true"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "start_semester_party"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "why not going",
+      "actions" : [ "semester_start_no_go" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "semester_start(no_go)"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "semester_start(maybe_go)"
+          }
+        } ]
+      } ]
+    } ]
+  } ]
+}
