@@ -57,7 +57,7 @@
       "value" : "I don't want to talk about it",
       "expressions" : "no_go(dont_want_to_talk)"
     }, {
-      "value" : "I don't have a reason",
+      "value" : "No reason",
       "expressions" : "no_go(no_reason)"
     }, {
       "value" : "Do not have time/have other plans",

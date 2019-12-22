@@ -1,0 +1,8 @@
+{
+  "words" : [ ],
+  "regExs" : [ ],
+  "phrases" : [ {
+    "phrase" : "start semester party",
+    "expressions" : "start_semester_party"
+  } ]
+}
