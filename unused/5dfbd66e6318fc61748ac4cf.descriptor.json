@@ -1,7 +1,7 @@
 {
-  "resource" : "eddi://ai.labs.output/outputstore/outputsets/5dfbd66e6318fc61748ac4cf?version=4",
+  "resource" : "eddi://ai.labs.output/outputstore/outputsets/5dfbd66e6318fc61748ac4cf?version=2",
   "createdOn" : 1576785518362,
-  "lastModifiedOn" : 1576787129978,
+  "lastModifiedOn" : 1576786270718,
   "deleted" : false,
   "name" : "Semester Party",
   "description" : ""

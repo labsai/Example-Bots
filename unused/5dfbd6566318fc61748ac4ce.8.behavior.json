@@ -63,11 +63,11 @@
       } ]
     }, {
       "name" : "dont have time",
-      "actions" : [ "dont_have_time", "CONVERSATION_END" ],
+      "actions" : [ "do_not_have_time", "CONVERSATION_END" ],
       "conditions" : [ {
         "type" : "inputmatcher",
         "configs" : {
-          "expressions" : "no_go(dont_have_time)"
+          "expressions" : "no_go(do_not_have_time)"
         }
       } ]
     }, {
