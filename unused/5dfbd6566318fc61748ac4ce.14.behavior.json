@@ -1,0 +1,174 @@
+{
+  "behaviorGroups" : [ {
+    "name" : "OnBoarding",
+    "behaviorRules" : [ {
+      "name" : "Welcome",
+      "actions" : [ "welcome" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "contextmatcher",
+          "configs" : {
+            "contextType" : "string",
+            "contextKey" : "semester_party",
+            "string" : "true"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "start_semester_party"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "why not going",
+      "actions" : [ "semester_party_no_go" ],
+      "conditions" : [ {
+        "type" : "connector",
+        "configs" : {
+          "operator" : "OR"
+        },
+        "conditions" : [ {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "semester_party(no_go)"
+          }
+        }, {
+          "type" : "inputmatcher",
+          "configs" : {
+            "expressions" : "semester_party(maybe_go)"
+          }
+        } ]
+      } ]
+    }, {
+      "name" : "dont want to talk",
+      "actions" : [ "dont_want_to_talk", "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "no_go(dont_want_to_talk)"
+        }
+      } ]
+    }, {
+      "name" : "no reason",
+      "actions" : [ "no_reason", "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "no_go(no_reason)"
+        }
+      } ]
+    }, {
+      "name" : "dont have time",
+      "actions" : [ "do_not_have_time", "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "no_go(do_not_have_time)"
+        }
+      } ]
+    }, {
+      "name" : "dont like parties",
+      "actions" : [ "dont_like_parties", "CONVERSATION_END" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "no_go(dont_like_parties)"
+        }
+      } ]
+    }, {
+      "name" : "have no one to go with",
+      "actions" : [ "have_no_one_to_go_with" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "no_go(have_no_one_to_go_with)"
+        }
+      } ]
+    }, {
+      "name" : "wants to be connected",
+      "actions" : [ "wants_to_be_connected" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "wants_to_be_connected"
+        }
+      } ]
+    }, {
+      "name" : "dont want to be connected",
+      "actions" : [ "dont_want_to_be_connected" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "dont_want_to_be_connected"
+        }
+      } ]
+    }, {
+      "name" : "not sure if want to be connected",
+      "actions" : [ "not_sure_if_want_to_be_connected" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "not_sure_if_want_to_be_connected"
+        }
+      } ]
+    }, {
+      "name" : "sounds a bit strange",
+      "actions" : [ "not_sure_if_want_to_be_connected" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "sounds_a_bit_strange"
+        }
+      } ]
+    }, {
+      "name" : "how do i initiate contact",
+      "actions" : [ "how_do_i_initiate_contact" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "how_do_i_initiate_contact"
+        }
+      } ]
+    }, {
+      "name" : "will i look stupid",
+      "actions" : [ "will_i_look_stupid" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "will_i_look_stupid"
+        }
+      } ]
+    }, {
+      "name" : "not my thing",
+      "actions" : [ "not_my_thing" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "not_my_thing"
+        }
+      } ]
+    }, {
+      "name" : "i dont want to tell",
+      "actions" : [ "i_dont_want_to_tell" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "i_dont_want_to_tell"
+        }
+      } ]
+    }, {
+      "name" : "i think i will pass",
+      "actions" : [ "i_think_i_will_pass" ],
+      "conditions" : [ {
+        "type" : "inputmatcher",
+        "configs" : {
+          "expressions" : "i_think_i_will_pass"
+        }
+      } ]
+    } ]
+  } ]
+}

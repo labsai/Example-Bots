@@ -1,0 +1,367 @@
+{
+  "outputSet" : [ {
+    "action" : "welcome",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Guess what!!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "There is a semester party happening at your campus in two weeks 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you think? Want to go? 😁",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "no",
+      "expressions" : "semester_party(no_go)"
+    }, {
+      "value" : "not sure",
+      "expressions" : "semester_party(maybe_go)"
+    }, {
+      "value" : "yes",
+      "expressions" : "semester_party(going)"
+    } ]
+  }, {
+    "action" : "semester_party_no_go",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Oh, I see.",
+        "delay" : 800
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Can I ask why? 😊",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Do you not have time or anyone to go with maybe?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "I don't want to talk about it",
+      "expressions" : "no_go(dont_want_to_talk)"
+    }, {
+      "value" : "No reason",
+      "expressions" : "no_go(no_reason)"
+    }, {
+      "value" : "Do not have time/have other plans",
+      "expressions" : "no_go(do_not_have_time)"
+    }, {
+      "value" : "Have no one to go with",
+      "expressions" : "no_go(have_no_one_to_go_with)"
+    }, {
+      "value" : "It's not my thing/don't like parties",
+      "expressions" : "no_go(dont_like_parties)"
+    } ]
+  }, {
+    "action" : "dont_want_to_talk",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Thats ok!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Let me know if you change your mind 😃",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "do_not_have_time",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Ah, busy these days.",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Enjoy whatever you are doing then 😁",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "no_reason",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Ok, have a good day.",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Talk soon 😃",
+        "delay" : 1000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "dont_like_parties",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "No problem!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Parties is not really my thing either 👌",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "have_no_one_to_go_with",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Going alone can be very scary!",
+        "delay" : 800
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "But you know what? ",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "I know some students who are in the same situation as you.",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "I would gladly put you in touch with these students!!",
+        "delay" : 1000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "It will make it less scary to go and maybe you will meet a potential new friend as well 🎉",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you say?",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "yes",
+      "expressions" : "wants_to_be_connected"
+    }, {
+      "value" : "No",
+      "expressions" : "dont_want_to_be_connected"
+    }, {
+      "value" : "Not sure",
+      "expressions" : "not_sure_if_want_to_be_connected"
+    }, {
+      "value" : "Need more information",
+      "expressions" : "not_sure_if_want_to_be_connected"
+    } ]
+  }, {
+    "action" : "wants_to_be_connected",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Perfect!! Lets see",
+        "delay" : 1500
+      } ]
+    } ],
+    "quickReplies" : [ ]
+  }, {
+    "action" : "dont_want_to_be_connected",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "That OK. Is there as reason for why you are a bit reluctant to try this? ",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "You don't have to tell me if you dont want to, but I would love to understand things better 😃",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Sounds a bit strange",
+      "expressions" : "sounds_a_bit_strange"
+    }, {
+      "value" : "How do i initiate contact?",
+      "expressions" : "how_do_i_initiate_contact"
+    }, {
+      "value" : "Will I look stupid?",
+      "expressions" : "will_i_look_stupid"
+    }, {
+      "value" : "Not my thing",
+      "expressions" : "not_my_thing"
+    }, {
+      "value" : "I dont want to tell",
+      "expressions" : "i_dont_want_to_tell"
+    } ]
+  }, {
+    "action" : "not_sure_if_want_to_be_connected",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "It might sound a bit strange maybe, but it is actually very cool!",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "There are actually a lot of students that dont want to go because they dont know that many in advance. ",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "So when peole share this with me, I can put together a little group and make it easier to meet new students and be social.",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "What do you say - want to give it a go? 😍",
+        "delay" : 1500
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Yes",
+      "expressions" : "wants_to_give_it_a_try"
+    }, {
+      "value" : "No",
+      "expressions" : "dont_want_to_give_it_a_try"
+    } ]
+  }, {
+    "action" : "how_do_i_initiate_contact",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "Oh, thats not as difficult as you would think! I will help you by introducing you.",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "I also have a few tricks up my sleeve if the conversations is a bit stagnant.",
+        "delay" : 2000
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "It usually goes very well and is nothing to worry about - trust me ❤",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Sounds a bit strange",
+      "expressions" : "sounds_a_bit_strange"
+    }, {
+      "value" : "Will I look stupid?",
+      "expressions" : "will_i_look_stupid"
+    }, {
+      "value" : "Ok, let's do it",
+      "expressions" : "wants_to_be_connected"
+    }, {
+      "value" : "I dont want to tell",
+      "expressions" : "i_dont_want_to_tell"
+    } ]
+  }, {
+    "action" : "how_do_i_initiate_contact",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Sounds a bit strange",
+      "expressions" : "sounds_a_bit_strange"
+    } ]
+  }, {
+    "action" : "how_do_i_initiate_contact",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Sounds a bit strange",
+      "expressions" : "sounds_a_bit_strange"
+    } ]
+  }, {
+    "action" : "how_do_i_initiate_contact",
+    "timesOccurred" : 0,
+    "outputs" : [ {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 1500
+      } ]
+    }, {
+      "type" : "text",
+      "valueAlternatives" : [ {
+        "text" : "",
+        "delay" : 2000
+      } ]
+    } ],
+    "quickReplies" : [ {
+      "value" : "Sounds a bit strange",
+      "expressions" : "sounds_a_bit_strange"
+    } ]
+  } ]
+}

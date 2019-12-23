@@ -1,7 +1,7 @@
 {
-  "resource" : "eddi://ai.labs.behavior/behaviorstore/behaviorsets/5dfbd6566318fc61748ac4ce?version=7",
+  "resource" : "eddi://ai.labs.behavior/behaviorstore/behaviorsets/5dfbd6566318fc61748ac4ce?version=12",
   "createdOn" : 1576785494237,
-  "lastModifiedOn" : 1576790944260,
+  "lastModifiedOn" : 1577098287503,
   "deleted" : false,
   "name" : "Semester Party",
   "description" : ""
